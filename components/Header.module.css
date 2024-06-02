@@ -1,8 +1,76 @@
 .headerContainer {
   position: fixed;
-  left: 0px;
-  right: 0px;
+
   width: 100%;
-  background-color: white;
-  height: 90px;
+  background-color: #151515;
+  height: 100px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  z-index: 50;
+  top: 0px;
+  max-width: 1920px;
+}
+
+.activeHeader {
+  height: 100px;
+}
+
+.inactiveHeader {
+  height: 124px;
+}
+
+.mobileMenuIcon {
+  font-size: 2.25rem;
+  line-height: 2.5re;
+}
+
+.mobileNavButton {
+  color: white;
+}
+
+.authenticationButton {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.loginButton {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.loginButton:hover {
+  color: #d4000d;
+}
+
+.registerButton {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.registerButton:hover {
+  color: #d4000d;
+}
+@media screen and (min-width: 1400px) {
+  .mobileNavButton {
+    display: none;
+  }
 }
