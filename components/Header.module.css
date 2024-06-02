@@ -1,0 +1,8 @@
+.headerContainer {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: white;
+  height: 90px;
+}

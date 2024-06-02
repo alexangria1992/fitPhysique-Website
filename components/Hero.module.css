@@ -1,0 +1,11 @@
+.heroContainer {
+  height: 80vh;
+  border: 1px solid red;
+  background-color: rgb(147 197 253);
+}
+
+@media screen and (min-width: 1024px) {
+  .heroContainer {
+    height: 912px;
+  }
+}
