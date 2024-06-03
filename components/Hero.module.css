@@ -1,11 +1,50 @@
-.heroContainer {
+.heroSection {
   height: 80vh;
   border: 1px solid red;
   background-color: rgb(147 197 253);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 1024px) {
+.heroContainer {
+  width: 100%;
+  border: 1px solid green;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  /* padding-top: 8rem; */
+
+  /* padding-top: 8rem; */
+}
+
+@media (min-width: 640px) {
   .heroContainer {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .heroContainer {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroContainer {
+    max-width: 1024px;
+  }
+
+  .heroSection {
     height: 912px;
+  }
+}
+@media (min-width: 1280px) {
+  .heroContainer {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .heroContainer {
+    max-width: 1536px;
   }
 }

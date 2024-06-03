@@ -1,0 +1,40 @@
+.heroButton {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.heroButtonSpan {
+  position: absolute;
+  width: 16rem;
+  top: 50%;
+  height: 0px;
+  transform-origin: center;
+  /* transform: translateX(-5rem); */
+  /* transform: rotate(45deg); */
+  background-color: rgb(0 0 0);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.heroButtonSpanText {
+  position: relative;
+  color: white;
+  transition-duration: 300ms;
+}
+
+.heroButton:hover {
+  .heroButtonSpan {
+    height: 16rem;
+  }
+
+  .heroButtonSpanText {
+    color: white;
+    transition-timing-function: ease;
+  }
+}
+/* .heroButtonSpan:hover {
+  height: 16rem;
+} */
