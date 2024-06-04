@@ -1,5 +1,5 @@
 .heroSection {
-  height: 125vh;
+  height: 193vh;
   border: 1px solid red;
   background-color: rgb(147 197 253);
   background-size: cover;
@@ -29,7 +29,7 @@
   }
 
   .heroSection {
-    height: 115vh;
+    height: 195vh;
     background-color: green;
   }
 }

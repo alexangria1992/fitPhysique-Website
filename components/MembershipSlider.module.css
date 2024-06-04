@@ -1,0 +1,55 @@
+.swiperContainer {
+  min-height: 680px;
+}
+
+.swiperDescription {
+  border: 1px solid #d4000d;
+  width: 100%;
+  max-width: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiperDescription:hover {
+  background-color: rgb(17 17 17 / 0.8);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.membershipTitle {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-right: 60px;
+  padding-left: 60px;
+  border-bottom: 1px solid #d4000d;
+}
+.benefitsContainer {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.benefitsIcon {
+  color: rgb(212 0 13);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@media screen and (min-width: 1400px) {
+  .membershipContainer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .swiperDescription {
+    max-width: none;
+  }
+}

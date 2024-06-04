@@ -1,4 +1,34 @@
 .membershipContainer {
-  height: 100vh;
-  background-color: rgb(190 242 100);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-image: url(/assets/img/membership/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.membershipContainer::before {
+  content: '';
+  border: 1px solid green;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 0.5);
+  position: absolute;
+  top: 0px;
+  z-index: 10;
+}
+
+@media screen and (min-width: 1024px) {
+  .membershipContainer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 200vh;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .membershipContainer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
