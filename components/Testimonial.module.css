@@ -1,4 +1,43 @@
 .testimonialContainer {
-  height: 50vh;
-  background-color: rgb(165 180 252);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.testimonialImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  height: 100%;
+}
+
+.testimonialImage {
+  border-radius: 9999px;
+  border: 2px solid #d4000d;
+}
+
+.testimonialContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonialMessage {
+  max-width: 380px;
+  margin-bottom: 1rem;
+}
+
+.testimonialName {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #d4000d;
+}
+@media screen and (min-width: 1400px) {
+  .testimonialContainer {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
 }
