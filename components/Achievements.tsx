@@ -14,7 +14,12 @@ const stats = [
   {
     number: 879,
     icon: FaClock,
-    text: 'working hours',
+    text: (
+      <>
+        working <br className='lg:block xl:hidden' />
+        hours
+      </>
+    ),
   },
   {
     number: 150,
@@ -58,7 +63,7 @@ const Achievements = () => {
   };
   return (
     <section>
-      <div className={styles.achievementsSection}>
+      <div className={`${styles.achievementsSection} container`}>
         <motion.div
           variants={statsContainerVariant}
           initial='hidden'

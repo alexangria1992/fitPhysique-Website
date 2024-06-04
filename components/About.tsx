@@ -34,7 +34,7 @@ const featured = [
 const About = () => {
   return (
     <section id='about' className={styles.aboutSection}>
-      <div className={styles.aboutContainer}>
+      <div className={`${styles.aboutContainer} container`}>
         <div className={styles.aboutWrapper}>
           <motion.h2
             variants={fadeIn('up', 0.4)}
@@ -49,7 +49,7 @@ const About = () => {
             variants={fadeIn('up', 0.6)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: false, amount: 0.3 }}
             className={styles.aboutText}
           >
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. In iusto

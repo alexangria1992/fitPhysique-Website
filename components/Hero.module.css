@@ -1,5 +1,5 @@
 .heroSection {
-  height: 80vh;
+  height: 125vh;
   border: 1px solid red;
   background-color: rgb(147 197 253);
   background-size: cover;
@@ -26,6 +26,11 @@
 @media (min-width: 768px) {
   .heroContainer {
     max-width: 768px;
+  }
+
+  .heroSection {
+    height: 115vh;
+    background-color: green;
   }
 }
 
