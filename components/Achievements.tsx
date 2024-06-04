@@ -16,7 +16,8 @@ const stats = [
     icon: FaClock,
     text: (
       <>
-        working <br /> hours
+        working <br className='lg:block xl:hidden' />
+        hours
       </>
     ),
   },
