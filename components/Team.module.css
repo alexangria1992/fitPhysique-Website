@@ -1,4 +1,74 @@
 .teamContainer {
-  height: 100vh;
-  background-color: rgb(252 165 165);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.trainerImageContainer {
+  position: relative;
+  width: 320px;
+  height: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.trainersGrid {
+  display: grid;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.trainerIcon {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.trainerlink:hover {
+  color: #d4000d;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.trainerDescription {
+  margin-bottom: 1.5rem;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trainerRole {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 3px;
+  margin-bottom: 0.5rem;
+}
+.trainerSocialsContainer {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.trainerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .trainersGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .trainersGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .teamContainer {
+    height: 110vh;
+  }
 }
