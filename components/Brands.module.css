@@ -1,4 +1,32 @@
 .brandsContainer {
-  height: 25vh;
-  background-color: rgb(249 168 212);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.brandsImage {
+  opacity: 0.5;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brandsWrapper {
+  display: grid;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.blogLink:hover {
+  .brandsImage {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .brandsWrapper {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
 }
