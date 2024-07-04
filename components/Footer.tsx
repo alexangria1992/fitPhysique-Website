@@ -99,7 +99,7 @@ const Footer = () => {
             </div>
             <div className={styles.footerBlogPostsContainer}>
               <Link href='#'>
-                <h5 className='hover:text-accent transition-allh5 leading-snug text-gray-300'>
+                <h5 className='hover:text-accent transition-all h5 leading-snug text-gray-300'>
                   How to stay motivated for all exercises
                 </h5>
                 <p className={styles.footerDate}>September 22, 2024 </p>
